@@ -4,3 +4,36 @@ Template: astra
 Version: 0.1
 */
 
+/* Move top banner (logo) up */
+.ast-site-identity {
+    padding: 0em;
+}
+
+/* Move top menu bar up on a wide screen */
+.header-main-layout-2 .site-branding {
+    padding-bottom: 0em;
+}
+
+/* Move top menu bar up on narrow screens */
+.ast-header-break-point .ast-mobile-header-stack .site-branding {
+    padding-bottom: 0em;
+}
+
+/* Move site title down for homepage */
+.ast-site-title-wrap {
+    padding-top: 0.5em;
+    /*background-color: pink;*/
+}
+
+/* Move menu bar up */
+.main-header-bar {
+    line-height: 3.3;
+}
+
+/* TODO - spread out top banner (logo) to full width on narrow screens */
+/* TODO - maybe choose a zoomed in version of the pic for narrow screens */
+
+/* Move menu bar hamburger button un on narrow screens */
+.ast-header-break-point .ast-mobile-header-stack.header-main-layout-2 .ast-mobile-menu-buttons {
+    padding-top: 0em;
+}
