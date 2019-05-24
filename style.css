@@ -4,6 +4,9 @@ Template: astra
 Version: 0.1
 */
 
+/* TODO - spread out top banner (logo) to full width on narrow screens */
+/* TODO - maybe choose a zoomed in version of the pic for narrow screens */
+
 /* Move top banner (logo) up */
 .ast-site-identity {
     padding: 0em;
@@ -30,10 +33,45 @@ Version: 0.1
     line-height: 3.3;
 }
 
-/* TODO - spread out top banner (logo) to full width on narrow screens */
-/* TODO - maybe choose a zoomed in version of the pic for narrow screens */
-
 /* Move menu bar hamburger button un on narrow screens */
 .ast-header-break-point .ast-mobile-header-stack.header-main-layout-2 .ast-mobile-menu-buttons {
     padding-top: 0em;
 }
+
+/* Background for "Archive" and "Categories" */
+.ast-separate-container .ast-archive-description, .ast-separate-container .ast-author-box {
+    background-color: #FFFFFF;
+}
+
+/* Orientation of "Archives" and "Categories */
+.ast-separate-container .ast-archive-description {
+    margin: 0;
+    padding: -0.66em 2.4em;
+}
+@media (min-width: 1201px)  {
+   .ast-separate-container .ast-archive-description, .ast-separate-container .ast-author-box {
+        margin: 0;
+        padding: 1em 6.67em 0em;
+   }
+}
+@media (max-width: 1200px) {
+    .ast-separate-container .ast-archive-description {
+        margin: 0;
+        padding: 0.34em 2.4em;
+    }
+}
+@media (max-width: 992px) {
+    .ast-separate-container .ast-archive-description {
+        padding: -0.86em;
+    }
+}
+@media (max-width: 544px) {
+    .ast-separate-container .ast-archive-description {
+        padding: 0.5em 1em;
+    }
+}
+
+/*.ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
+    padding: 3.34em 6.67em;
+}
+*/
