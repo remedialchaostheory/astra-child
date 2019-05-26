@@ -70,6 +70,18 @@ Version: 0.1
     .ast-separate-container .ast-archive-description {
         padding: 1em 6.58em 2em;
     }
+    /* Extend top banner to full width */
+    .main-header-bar div:nth-child(1)  {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /* Increase padding for menu items due to increased top banner width */
+    .main-header-bar.ast-header-breadcrumb, .ast-header-break-point .main-header-bar.ast-header-breadcrumb, .ast-header-break-point .header-main-layout-2 .main-header-bar.ast-header-breadcrumb, .ast-header-break-point .ast-mobile-header-stack .main-header-bar.ast-header-breadcrumb, .ast-default-menu-enable.ast-main-header-nav-open.ast-header-break-point .main-header-bar-wrap .main-header-bar.ast-header-breadcrumb, .ast-main-header-nav-open .main-header-bar-wrap .main-header-bar.ast-header-breadcrumb {
+        padding-left: 20px;
+    }
+    .ast-header-break-point .ast-main-header-bar-alignment {
+        padding-left: 20px;
+    }
 }
 @media (max-width: 544px) {
     .ast-separate-container .ast-archive-description {
@@ -91,3 +103,4 @@ Version: 0.1
 .ast-row article:nth-child(1) {
     padding: 0.34em 6.67em 2.34em;
 }
+
