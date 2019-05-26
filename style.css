@@ -38,12 +38,12 @@ Version: 0.1
     padding-top: 0em;
 }
 
-/* Background for "Archive" and "Categories" */
+/* Background for "Archive" and "Categories" headings */
 .ast-separate-container .ast-archive-description, .ast-separate-container .ast-author-box {
     background-color: #FFFFFF;
 }
 
-/* Orientation of "Archives" and "Categories */
+/* Reduce padding of "Archives" and "Categories" headings */
 .ast-separate-container .ast-archive-description {
     margin: 0;
     padding: -0.66em 2.4em;
@@ -51,37 +51,43 @@ Version: 0.1
 @media (min-width: 1201px)  {
    .ast-separate-container .ast-archive-description, .ast-separate-container .ast-author-box {
         margin: 0;
-        padding: 1em 6.67em 0em;
+        padding: 0em 6.58em 2em;
    }
 }
 @media (max-width: 1200px) {
     .ast-separate-container .ast-archive-description {
         margin: 0;
-        padding: 0.34em 6.4em;
+        padding: 0em 6.58em 2em;
     }
 }
 @media (max-width: 992px) {
     .ast-separate-container .ast-archive-description {
-        padding: -0.86em;
+        padding: 0em 6.58em 2em;
+    }
+}
+/* Pixel breakpoint for sidebar move to bottom of page */
+@media (max-width: 768px) {
+    .ast-separate-container .ast-archive-description {
+        padding: 1em 6.58em 2em;
     }
 }
 @media (max-width: 544px) {
     .ast-separate-container .ast-archive-description {
-        padding: 0.5em 1em;
+        padding: 1em 6.58em 2em;
     }
 }
 
-/* Orientation for posts */
+/* Line up rest of posts with top post */
 .ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
     padding: 2.34em 6.67em;
 }
 
-/* Orientation for main section of single pages */
+/* Remove top padding for main section of single pages */
 #content ~ .ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
     padding: 0.34em 6.67em;
 }
 
-/* Move only the first post up */
+/* Remove top padding for first post */
 .ast-row article:nth-child(1) {
     padding: 0.34em 6.67em 2.34em;
 }
