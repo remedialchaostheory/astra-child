@@ -4,7 +4,6 @@ Template: astra
 Version: 0.1
 */
 
-/* TODO - spread out top banner (logo) to full width on narrow screens */
 /* TODO - maybe choose a zoomed in version of the pic for narrow screens */
 
 /* Move top banner (logo) up */
@@ -25,7 +24,6 @@ Version: 0.1
 /* Move site title down for homepage */
 .ast-site-title-wrap {
     padding-top: 0.5em;
-    /*background-color: pink;*/
 }
 
 /* Move menu bar up */
